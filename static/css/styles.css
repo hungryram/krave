@@ -245,13 +245,27 @@ div.hero-text p {
     font-size: 17.5px;
 }
 
+div.hero__heading h1 {
+    font-size: 7rem;
+}
+
+@media screen and (min-width:1240px) {
+    div.hero__heading h1 {
+        font-size: 6rem;
+    }
+}
+
 @media screen and (max-width: 800px) {
     div.hero-text {
         padding: 20px;
     }
 
-    div.hero-text h1 {
-        font-size: 1.5rem;
+    div.hero__heading h1 {
+        font-size: 3rem;
+    }
+
+    div.hero__heading p {
+        font-size: 1.4rem;
     }
 
     div.hero-text p.uk-text-normal {

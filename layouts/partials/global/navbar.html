@@ -2,7 +2,7 @@
 {{ $navColor := .Site.Data.appearance.header }}
 {{ $navContact := .Site.Data.profile.contact_information }}
 {{ $headerSocial := .Site.Data.profile.social_media }}
-<div class="tm-header uk-visible@l tm-header-overlay">
+<div class="uk-visible@m">
 	<div class="uk-sticky">
 		<div class="uk-navbar-container uk-navbar-transparent">
 			<div class="uk-container uk-container-expand">
@@ -41,8 +41,8 @@
 
 
 <!-- mobile -->
-<div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-dark; cls-inactive: top: 400">
-    <nav class="uk-navbar uk-navbar-container uk-hidden@s uk-box-shadow-small" style="padding: 0 15px;">
+<div>
+    <nav class="uk-navbar uk-hidden@m uk-box-shadow-small uk-navbar-transparent" style="padding: 0 15px;">
         <div class="uk-navbar-left">
             <a href="{{ .Site.BaseURL }}">
                 <img src="{{ .Site.Data.appearance.branding.logo }}" alt="{{ .Site.Data.profile.company_name }}" width="140">
