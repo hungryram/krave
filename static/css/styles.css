@@ -17,9 +17,10 @@ body .uk-heading-large,
 body .uk-heading-medium, 
 body .uk-heading-small, 
 body .uk-heading-xlarge {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-weight: 600;
     line-height: 1.5;
+    letter-spacing: 1.4px;
 }
 
 body {
@@ -58,7 +59,7 @@ ul.uk-breadcrumb>*>:hover {
 }
 
 a.uk-accordion-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-weight: 600;
     font-size: 1rem;
 }
@@ -74,8 +75,16 @@ h1.h1-title {
 }
 
 a.uk-button-secondary {
-    background: white;
+    background: transparent;
+    border: 1px solid #222;
+    transition: .3s;
     color: #222;
+}
+
+a.uk-button-secondary:hover {
+    background: #222;
+    color: #fff;
+    transition: .3s;
 }
 
 .uk-text-medium {
@@ -92,7 +101,7 @@ a.uk-button-secondary {
 
 button.uk-button-primary,
 a.uk-button-primary {
-    background: #aa0817;
+    background: #000;
     padding: 5px 40px;
     color: #FFF;
     display: inline-block;
@@ -110,7 +119,7 @@ a.uk-button-primary {
 
 body .uk-button-primary.uk-active, body .uk-button-primary:active,
 body .uk-button-primary:focus, body .uk-button-primary:hover {
-    background-color: #aa0817;
+    background-color: #000;
     color: #fff;
 }
 
@@ -195,10 +204,11 @@ div.uk-navbar-dropdown ul li {
 } */
 
 ul.uk-navbar-nav>li>a:not(.top-navbar a) {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-weight: 500;
     transition: .1s;
     color: #000;
+    font-size: 1.5rem;
 }
 
 div ul.uk-navbar-nav>li>a:hover {
@@ -359,12 +369,11 @@ ul.service__list__faq li a:hover {
 /* FOOTER */
 
 footer.footer {
-    background: #19202A;
+    background: #F3F3F3;
 }
 
-footer.footer h6,
 footer.footer a {
-    color: #fff;
+    color: #000;
 }
 
 div.footer-credit p,
@@ -405,16 +414,4 @@ footer.footer svg:hover {
     footer.footer .service__list {
         columns: 2;
     }
-}
-
-/* SELECT 2 */
-
-body .select2-container--default .select2-selection--multiple {
-    border-radius: 0;
-    border: 1px solid #e5e5e5;
-    height: 40px;
-}
-
-span.select2.select2-container.select2-container--default.select2-container--below {
-    overflow: scroll;
 }
