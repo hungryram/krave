@@ -62,3 +62,5 @@ fields:
       labelField: 
     label: Teas
   label: Tea Menu
+pages:
+- content/menu/_index.md
