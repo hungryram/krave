@@ -25,7 +25,6 @@ sections:
 - type: document
   path: content/menu/_index.md
   label: Menu
-  match: "**/*"
 - type: document
   path: content/about/_index.md
   label: About
