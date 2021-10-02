@@ -273,59 +273,6 @@ div.hero__heading h1 {
     }
 }
 
-/* FEATURED SECTION */
-
-.uk-section.uk-section-small.featured__section {
-    margin-top: -150px;
-}
-
-.featured__section .uk-card-default,
-.service__box .{
-    box-shadow: none;
-    transition: .3s ease;
-    border: 1px solid #eee;
-}
-
-.featured__section .uk-card-default:hover,
-.service__box .uk-card-default:hover {
-    background: #aa0817;
-    color: #fff;
-    transition: .3s ease;
-    border: 1px solid #aa0817;
-}
-
-.featured__section .uk-card-default:hover h3,
-.featured__section .uk-card-default:hover svg,
-.featured__section .uk-card-default:hover a.accent,
-.service__box .uk-card-default:hover h3,
-.service__box .uk-card-default:hover a.accent,
-.service__box .uk-card-default:hover svg {
-    color: #fff;
-    transition: .3s ease;
-    fill: #fff;
-}
-
-.service__box .uk-card-default:hover a.accent,
-.featured__section .uk-card-default:hover a.accent {
-    text-decoration: underline;
-}
-
-.featured__section .h3,
-.featured__section .a {
-    transition: .3s ease;
-}
-
-.featured__section ..svg__icons svg,
-.service__box ..svg__icons svg {
-    width: 50px;
-}
-
-
-/* NUMBER COUNTER */
-
-.number__counter p:nth-child(2) {
-    color: #a5a5a5;
-}
 
 /* CONTACT */
 
@@ -393,28 +340,14 @@ footer.footer {
 }
 
 footer.footer a {
+    transition: .3s ease;
     color: #000;
 }
 
-div.footer-credit p,
-div.footer-credit ul li a {
-    font-size: 12px;
-}
-
-.contact-detail span.uk-icon-button {
-    background: #aa0817;
-}
-
-.contact-detail svg {
-    color: #fff;
-}
-
-.contact-detail a {
-    color: #000;
-}
-
-.service__list {
-    columns: 2;
+footer.footer a:hover {
+    color: #58d0da;
+    text-decoration: none;
+    transition: .3s ease;
 }
 
 .footer-credit ul li {
@@ -423,6 +356,16 @@ div.footer-credit ul li a {
 
 footer.footer svg {
     transition: .3s;
+}
+
+.footer__social .uk-icon-button {
+    background: #58d0da;
+    color: #fff;
+}
+
+.footer__social .uk-icon-button:hover {
+    background: #58d0da;
+    color: #fff;
 }
 
 footer.footer svg:hover {

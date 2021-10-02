@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{ $footerContact := .Site.Data.profile.contact_information }}
 {{ $optBlock := dict "display" "block" }}
+{{ $footerSocial := .Site.Data.profile.social_media }}
 
 <div class="uk-section">
     <div class="uk-container">
@@ -14,6 +15,17 @@
                         {{ if $footerContact.email }}<li class="uk-margin-medium-bottom"><a href="tel:{{ $footerContact.email }}"><span class="uk-margin-small-right uk-icon-button" uk-icon="mail"></span>{{ $footerContact.email }}</a></li>{{ end }}
                         {{ if $footerContact.address }}<li class="uk-margin-medium-bottom"><span class="uk-margin-small-right uk-icon-button" uk-icon="location"></span><a href="{{ if $footerContact.google_page_link }}{{ $footerContact.google_page_link }}{{ else }}https://www.google.com/maps/place/{{ $footerContact.address }},+{{ $footerContact.city }},+{{ $footerContact.state }}{{ end }}">{{ $footerContact.address }}, {{ $footerContact.city }}, {{ $footerContact.state }} {{ $footerContact.zip_code }}</a></li>{{ end }}                    
                     </ul>
+                    <div class="footer__social">
+                        <h3>Follow us</h3>
+                        {{ if $footerSocial.facebook }}<a href="{{ $footerSocial.facebook }}" uk-icon="icon: facebook; ratio: 1.2" style="color: #58d0da;"></a>{{ end }}
+                        {{ if $footerSocial.instagram }}<a href="{{ $footerSocial.instagram }}" uk-icon="icon: instagram; ratio: 1.2" style="color: #58d0da;"></a>{{ end }}
+                        {{ if $footerSocial.linkedin }}<a href="{{ $footerSocial.linkedin }}" uk-icon="icon: linkedin; ratio: 1.2" style="color: #58d0da;"></a>{{ end }}
+                        {{ if $footerSocial.pinterest }}<a href="{{ $footerSocial.pinterest }}" uk-icon="icon: pinterest; ratio: 1.2" style="color: #58d0da;"></a>{{ end }}
+                        {{ if $footerSocial.twitter }}<a href="{{ $footerSocial.twitter }}" uk-icon="icon: twitter; ratio: 1.2" style="color: #58d0da;"></a>{{ end }}
+                        {{ if $footerSocial.youtube }}<a href="{{ $footerSocial.youtube }}" uk-icon="icon: youtube; ratio: 1.2" style="color: #58d0da;"></a>{{ end }}
+                        {{ if $footerSocial.tiktok }}<a href="{{ $footerSocial.tiktok }}" uk-icon="icon: tiktok; ratio: 1.2" style="color: #58d0da;"></a>{{ end }}
+                        {{ if $footerSocial.yelp }}<a href="{{ $footerSocial.yelp }}" uk-icon="icon: yelp; ratio: 1.2" style="color: #58d0da;"></a>{{ end }}
+                    </div>
                 </div>
             </div>
             <div class="uk-width-1-2@s">
