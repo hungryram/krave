@@ -39,6 +39,19 @@ fields:
       labelField: 
     label: Shakes
   label: Shake Menu
+- name: shake_add_ons
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Shake Add Ons
 - name: power_tea
   type: field_group
   config: {}
@@ -62,5 +75,41 @@ fields:
       labelField: 
     label: Teas
   label: Power Tea
+- name: basic_tea
+  type: field_group
+  config: {}
+  fields:
+  - name: b_tea
+    type: field_group_list
+    fields:
+    - name: name
+      type: text
+      config:
+        required: false
+      label: Name
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Tea
+  label: Basic Tea
+- name: tea_add_ons
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: ingredients
+    type: text
+    config:
+      required: false
+    label: Ingredients
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Tea Add Ons
 pages:
 - content/menu/_index.md
