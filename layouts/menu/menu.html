@@ -12,7 +12,9 @@
                                 <p class="uk-text-bold">Under 200 calories, 17+ grams of protein, 45 essential vitatmins and minerals. Keto friendly.</p>
                                 <div class="uk-column-1-2">
                                     <ul class="uk-list uk-list-decimal">
-                                        <li></li>
+                                        {{ range .Params.shake_menu.shakes }}
+                                            <li><strong class="uk-text-uppercase">{{ .name }}</strong></li>
+                                        {{ end }}
                                     </ul>
                                 </div>
                             </div>
@@ -28,22 +30,12 @@
                                 <p class="uk-text-bold">Includes aloe, tea, liftoff</p>
                                 <div class="uk-column-1-2">
                                     <ul class="uk-list uk-list-hyphen">
+                                        {{ range .Params.power_tea.p_teas }}
                                         <li>
-                                            <strong style="text-decoration: underline;">gusher</strong><br>
-                                            <span>tes,ttes, test</span>
+                                            <strong class="uk-text-uppercase" style="text-decoration: underline;">{{ .name }}</strong><br>
+                                            <span>{{ .ingredients }}</span>
                                         </li>
-                                        <li>
-                                            <strong style="text-decoration: underline;">gusher</strong><br>
-                                            <span>tes,ttes, test</span>
-                                        </li>
-                                        <li>
-                                            <strong style="text-decoration: underline;">gusher</strong><br>
-                                            <span>tes,ttes, test</span>
-                                        </li>
-                                        <li>
-                                            <strong style="text-decoration: underline;">gusher</strong><br>
-                                            <span>tes,ttes, test</span>
-                                        </li>
+                                        {{ end }}
                                     </ul>
                                 </div>
                             </div>
