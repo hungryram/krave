@@ -39,11 +39,11 @@ fields:
       labelField: 
     label: Shakes
   label: Shake Menu
-- name: tea_menu
+- name: power_tea
   type: field_group
   config: {}
   fields:
-  - name: teas
+  - name: p_teas
     type: field_group_list
     fields:
     - name: name
@@ -61,6 +61,6 @@ fields:
       max: 
       labelField: 
     label: Teas
-  label: Tea Menu
+  label: Power Tea
 pages:
 - content/menu/_index.md
