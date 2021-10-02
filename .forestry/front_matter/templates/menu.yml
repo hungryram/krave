@@ -21,7 +21,7 @@ fields:
     schema:
       format: markdown
   label: Body
-- name: shakes
+- name: shake_menu
   type: field_group
   config: {}
   fields:
@@ -38,7 +38,7 @@ fields:
       max: 
       labelField: 
     label: Shakes
-  label: Shakes
+  label: Shake Menu
 - name: teas
   type: field_group
   config: {}
