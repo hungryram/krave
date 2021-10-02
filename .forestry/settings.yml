@@ -21,25 +21,11 @@ sections:
   templates:
   - pages
 - type: heading
-  label: Blog
-- type: directory
-  path: content/blog
-  label: Add Post
-  create: documents
-  match: "**/*"
-  templates:
-  - heading-and-body
-  - blog
-- type: heading
   label: Default Pages
-- type: directory
-  path: content/insurance
-  label: Insurance
-  create: documents
+- type: document
+  path: content/menu/_index.md
+  label: Menu
   match: "**/*"
-  templates:
-  - services
-  - heading-and-body
 - type: document
   path: content/about/_index.md
   label: About
