@@ -20,6 +20,20 @@
                             </div>
                         </li>
                     </ul>
+                    <ul uk-accordion>
+                        <li>
+                            <a class="uk-accordion-title uk-light" style="font-size: 2rem;" href="#">Shake Add-ons</a>
+                            <div class="uk-accordion-content uk-margin-medium-top">
+                                <div class="uk-column-1-2">
+                                    <ul class="uk-list uk-list-hyphen">
+                                        {{ range .Params.shake_add_ons }}
+                                            <li><strong class="uk-text-uppercase">{{ .name }}</strong></li>
+                                        {{ end }}
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="step__two uk-margin-medium-top">
                     <h3>2. Choose a basic tea or power tea</h3>
@@ -28,7 +42,7 @@
                             <a class="uk-accordion-title uk-light" style="font-size: 2rem;" href="#">Power Teas</a>
                             <div class="uk-accordion-content uk-margin-medium-top">
                                 <p class="uk-text-bold">Includes aloe, tea, liftoff</p>
-                                <div class="uk-column-1-2">
+                                <div class="uk-column-1-2@s">
                                     <ul class="uk-list uk-list-hyphen">
                                         {{ range .Params.power_tea.p_teas }}
                                         <li>
@@ -48,22 +62,11 @@
                                 <p class="uk-text-bold">Includes aloe, tea, liftoff</p>
                                 <div class="uk-column-1-2">
                                     <ul class="uk-list uk-list-hyphen">
+                                        {{ range .Params.basic_tea.b_tea }}
                                         <li>
-                                            <strong style="text-decoration: underline;">gusher</strong><br>
-                                            <span>tes,ttes, test</span>
+                                            <strong class="uk-text-uppercase" style="text-decoration: underline;">{{ .name }}</strong><br>
                                         </li>
-                                        <li>
-                                            <strong style="text-decoration: underline;">gusher</strong><br>
-                                            <span>tes,ttes, test</span>
-                                        </li>
-                                        <li>
-                                            <strong style="text-decoration: underline;">gusher</strong><br>
-                                            <span>tes,ttes, test</span>
-                                        </li>
-                                        <li>
-                                            <strong style="text-decoration: underline;">gusher</strong><br>
-                                            <span>tes,ttes, test</span>
-                                        </li>
+                                        {{ end }}
                                     </ul>
                                 </div>
                             </div>
@@ -73,26 +76,16 @@
                         <li>
                             <a class="uk-accordion-title uk-light" style="font-size: 2rem;" href="#">Tea add-ons</a>
                             <div class="uk-accordion-content uk-margin-medium-top">
-                                <p class="uk-text-bold">Need a little tea boost? View our add-ons.</p>
-                                <em>Liftoff is included in a power tea.</em>
+                                <p class="uk-text-bold">Need a little tea boost? View our add-ons. <em>Liftoff is included in a power tea.</em></p>
+                                
                                 <div class="uk-column-1-2">
                                     <ul class="uk-list uk-list-hyphen">
+                                        {{ range .Params.tea_add_ons }}
                                         <li>
-                                            <strong style="text-decoration: underline;">gusher</strong><br>
-                                            <span>tes,ttes, test</span>
+                                            <strong class="uk-text-uppercase" style="text-decoration: underline;">{{ .name }}</strong><br>
+                                            {{ if .ingredients }}<span>{{ .ingredients }}</span>{{ end }}
                                         </li>
-                                        <li>
-                                            <strong style="text-decoration: underline;">gusher</strong><br>
-                                            <span>tes,ttes, test</span>
-                                        </li>
-                                        <li>
-                                            <strong style="text-decoration: underline;">gusher</strong><br>
-                                            <span>tes,ttes, test</span>
-                                        </li>
-                                        <li>
-                                            <strong style="text-decoration: underline;">gusher</strong><br>
-                                            <span>tes,ttes, test</span>
-                                        </li>
+                                        {{ end }}
                                     </ul>
                                 </div>
                             </div>
