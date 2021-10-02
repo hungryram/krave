@@ -3,8 +3,20 @@ body = ""
 heading = "Delicious Shake Menu"
 shakes = []
 title = "Menu"
-[basic_tea]
-b_tea = []
+[[basic_tea.b_tea]]
+name = "Raspberry"
+[[basic_tea.b_tea]]
+name = "Lemon"
+[[basic_tea.b_tea]]
+name = "Peach"
+[[basic_tea.b_tea]]
+name = "Cinnamon"
+[[basic_tea.b_tea]]
+name = "Chai"
+[[basic_tea.b_tea]]
+name = "Pomegranate"
+[[basic_tea.b_tea]]
+name = "NRG (Guarana)"
 [[power_tea.p_teas]]
 ingredients = "Strawberry, Blue Blast, Watermelon, Mandarin, Peach Tea, Lemon-Lime"
 name = "Gusher"
