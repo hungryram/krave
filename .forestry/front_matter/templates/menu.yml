@@ -39,7 +39,7 @@ fields:
       labelField: 
     label: Shakes
   label: Shake Menu
-- name: teas
+- name: tea_menu
   type: field_group
   config: {}
   fields:
@@ -61,4 +61,4 @@ fields:
       max: 
       labelField: 
     label: Teas
-  label: Teas
+  label: Tea Menu
