@@ -3,6 +3,8 @@ body = ""
 heading = "Delicious Shake Menu"
 shakes = []
 title = "Menu"
+[basic_tea]
+b_tea = []
 [[power_tea.p_teas]]
 ingredients = "Strawberry, Blue Blast, Watermelon, Mandarin, Peach Tea, Lemon-Lime"
 name = "Gusher"
@@ -115,5 +117,35 @@ name = "White Chocolate Raspberry Cheesecake"
 teas = []
 [teas]
 teas = []
+[[shake_add_ons]]
+name = "Extra Protein $2"
+[[shake_add_ons]]
+name = "Fiber $2"
+[[shake_add_ons]]
+name = "Probiotic $2"
+[[shake_add_ons]]
+name = "PB2 $0.50"
+[[shake_add_ons]]
+name = "Rebuild Strength $3"
+[[shake_add_ons]]
+name = "Enhanced Protein $3"
+[[tea_add_ons]]
+ingredients = "Lemon Lime, Pomegranate, Tropical Fruit, Orange"
+name = "Liftoff $2.50"
+[[tea_add_ons]]
+ingredients = ""
+name = "Collagen $2"
+[[tea_add_ons]]
+ingredients = ""
+name = "Donut Hole $4"
+[[tea_add_ons]]
+ingredients = ""
+name = "Best Defense $2"
+[[tea_add_ons]]
+ingredients = "Unflavored, Apple Flavor, Tropical Flavor"
+name = "Fiber $2"
+[[tea_add_ons]]
+ingredients = ""
+name = "Add NRG $1"
 
 +++
