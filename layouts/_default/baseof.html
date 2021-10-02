@@ -2,11 +2,13 @@
 <div class="uk-position-top full-nav-wrapper" style="z-index: 1;">
     {{ partial "global/navbar" . }}
 </div>
-<div class="uk-visible@m uk-background-norepeat uk-background-cover uk-background-center-center uk-flex uk-flex-middle uk-height-large"  style="background:url(https://res.cloudinary.com/hungryram19/image/upload/v1633063424/aj-garcia/krave-exploding-background.jpg) no-repeat center;background-size:cover">
+<div class="uk-background-norepeat uk-background-cover uk-background-center-center uk-flex uk-flex-middle uk-height-large"  style="background:url(https://res.cloudinary.com/hungryram19/image/upload/v1633130366/aj-garcia/drink-banner.jpg) no-repeat center;background-size:cover">
     <div class="uk-width-1-1">
-        <div class="uk-container uk-container-large">
+        <div class="uk-container uk-container-large uk-text-center">
             <div>
-                <h1>{{ .Title }}</h1>
+                <h1 class="uk-text-default">{{ .Title }}</h1>
+                <h2>{{ .Params.heading }}</h2>
+                <hr class="uk-divider-small">
             </div>
         </div>
     </div>

@@ -280,7 +280,7 @@ div.hero__heading h1 {
 }
 
 .featured__section .uk-card-default,
-.service__box .uk-card-default {
+.service__box .{
     box-shadow: none;
     transition: .3s ease;
     border: 1px solid #eee;
@@ -310,13 +310,13 @@ div.hero__heading h1 {
     text-decoration: underline;
 }
 
-.featured__section .uk-card-default h3,
-.featured__section .uk-card-default a {
+.featured__section .h3,
+.featured__section .a {
     transition: .3s ease;
 }
 
-.featured__section .uk-card-default .svg__icons svg,
-.service__box .uk-card-default .svg__icons svg {
+.featured__section ..svg__icons svg,
+.service__box ..svg__icons svg {
     width: 50px;
 }
 
@@ -334,9 +334,13 @@ div.hero__heading h1 {
     color: #222;
 }
 
-.contact__icons a:hover {
-    color: #aa0817;
-    transition: .3s;
+span.uk-margin-small-right.uk-icon-button.uk-icon {
+    background: #58d0da;
+    color: white;
+}
+
+.contact__page li a {
+    color: #222;
 }
 
 /* SINGLE SERVICE PAGE */
@@ -351,33 +355,35 @@ div.box-top {
     top: 30px;
 }
 
-/* FAQ */
+/* MENU */
 
-div.uk-card-secondary {
-    background: #f3f3f3;
-    box-shadow: none;
-    transition: .3s;
+a.uk-accordion-title:hover,
+a.uk-accordion-title:focus, a.uk-accordion-title:hover {
+    color: #fff;
 }
 
-div.uk-card-secondary.uk-card-hover:hover {
-    background: #f3f3f3;
-    color: inherit;
-    box-shadow: none;
+a.uk-accordion-title {
+    padding: 10px;
+    color: white;
+    background: #ff0100;
+    box-shadow: 10px 13px 0 #676767;
+    font-weight: 400;
 }
 
-.faq__page .uk-card-body {
-    padding: 20px;
+a.uk-accordion-title::before {
+    content: "+";
+    width: 1.4em;
+    height: 1.4em;
+    margin-left: 0;
+    margin-top: 5px;
+    float: right;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
-.faq__page .uk-card-body h3 {
-    font-size: 1rem;
-    border-left: 4px solid #aa0817;
-    padding-left: 10px;
-}
-
-ul.service__list__faq li a:hover {
-    color: #aa0817;
-    transition: .3s;
+.uk-open>a.uk-accordion-title::before {
+    background-image: none;
 }
 
 /* FOOTER */
